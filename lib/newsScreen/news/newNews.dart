@@ -12,7 +12,7 @@ class _newNewsState extends State<newNews> {
    final ImgurlController = TextEditingController();
 
   final TitleController = TextEditingController();
-
+   final DescriptionController = TextEditingController();
 
  
 
@@ -31,16 +31,20 @@ class _newNewsState extends State<newNews> {
                 ),
               
                 TextField(
-                  decoration: InputDecoration(labelText: "TeamB"),
+                  decoration: InputDecoration(labelText: "Title"),
                   controller: TitleController,
                 ),
-            
+              TextField(
+                decoration: InputDecoration(labelText: "Description"),
+                controller: DescriptionController,
+              ),
             
               FlatButton(
                 onPressed: () {
                   widget.addDSC(
                       ImgurlController.text,
                       TitleController.text,
+                    DescriptionController.text
                       );
                 },
                 child: Text("Add News"),

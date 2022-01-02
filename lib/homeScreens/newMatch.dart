@@ -151,6 +151,7 @@ class _NewMatchState extends State<NewMatch> {
                 child: Text("Add Match"),
                 textColor: Colors.purple,
               ),
+
             ],
           )),
     );

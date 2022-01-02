@@ -54,6 +54,7 @@ class _MyHomePageNUState extends State<MyHomePageNU> {
             referee: value["referee"],
             Stadium: value["Stadium"],
             Time: value["Time"],
+            id: key,
             Date: DateFormat("yyyy-MM-dd hh:mm:ss").parse(value["Date"])));
 
       });
